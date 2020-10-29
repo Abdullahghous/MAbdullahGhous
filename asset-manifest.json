@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/MAbdullahGhous/static/css/main.e583420e.chunk.css",
+    "main.js": "/MAbdullahGhous/static/js/main.5e75fa6c.chunk.js",
+    "main.js.map": "/MAbdullahGhous/static/js/main.5e75fa6c.chunk.js.map",
+    "runtime-main.js": "/MAbdullahGhous/static/js/runtime-main.0243988c.js",
+    "runtime-main.js.map": "/MAbdullahGhous/static/js/runtime-main.0243988c.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/MAbdullahGhous/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.aa778de6.chunk.js": "/MAbdullahGhous/static/js/2.aa778de6.chunk.js",
+    "static/js/2.aa778de6.chunk.js.map": "/MAbdullahGhous/static/js/2.aa778de6.chunk.js.map",
+    "static/js/3.e6b5678a.chunk.js": "/MAbdullahGhous/static/js/3.e6b5678a.chunk.js",
+    "static/js/3.e6b5678a.chunk.js.map": "/MAbdullahGhous/static/js/3.e6b5678a.chunk.js.map",
+    "index.html": "/MAbdullahGhous/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/MAbdullahGhous/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.e583420e.chunk.css.map": "/MAbdullahGhous/static/css/main.e583420e.chunk.css.map",
+    "static/js/2.aa778de6.chunk.js.LICENSE.txt": "/MAbdullahGhous/static/js/2.aa778de6.chunk.js.LICENSE.txt",
+    "static/media/bannerImg.db963dc1.png": "/MAbdullahGhous/static/media/bannerImg.db963dc1.png",
+    "static/media/new.947a86ca.png": "/MAbdullahGhous/static/media/new.947a86ca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0243988c.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.aa778de6.chunk.js",
+    "static/css/main.e583420e.chunk.css",
+    "static/js/main.5e75fa6c.chunk.js"
+  ]
+}
