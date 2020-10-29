@@ -1,0 +1,63 @@
+.svg_circle {
+    display: block;
+    height: 115px;
+    width: 100%;
+    margin-top: -8%;
+}
+.container_footer {
+  background-color: #6200ea;
+  height: auto;
+  padding-bottom: 24px;
+}
+.footer_title {
+    color: white;
+    margin-left: 4%;
+    font-size: 3em;
+}
+.footer_social_link {
+    display: flex;
+    justify-content: space-evenly
+}
+.footer_social_link > a {
+    font-size: calc(1em + 5vw);
+    color: #fff;
+    padding: 20px;
+}
+.footer_social_link > a:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: #fff;
+    border-radius: 12px;
+}
+@media screen and (max-width: 1360px) {
+    .svg_circle {
+        display: block;
+        height: 115px;
+        width: 100%;
+        margin-top: -12%;
+    }
+}
+@media screen and (max-width: 790px) {
+    .svg_circle {
+        display: block;
+        height: 115px;
+        width: 100%;
+        margin-top: -14%;
+    }
+}
+@media screen and (max-width: 710px) {
+    .svg_circle {
+        display: block;
+        height: 115px;
+        width: 100%;
+        margin-top: -15%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .svg_circle {
+        display: block;
+        height: 115px;
+        width: 100%;
+        margin-top: -24%;
+    }
+}
+

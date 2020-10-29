@@ -1,0 +1,109 @@
+.banner_container {
+  display: flex;
+}
+.banner_left {
+  background-color: #ebebeb;
+  height: 75vh;
+  width: 60%;
+}
+.banner_right {
+  background-color: #ebebeb;
+  height: 75vh;
+  width: 40%;
+}
+.banner_img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 16%;
+}
+.box {
+  background: #6200ee;
+  padding: 16px;
+  margin-top: 16%;
+  margin-left: 10%;
+  margin-right: 14%;
+  box-shadow: 5px 10px 18px #888888;
+}
+.box > p {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 39px;
+}
+@media screen and (max-width: 724px) {
+  .banner_img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 38%;
+  }
+  .box > p {
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 39px;
+  }
+  .banner_left {
+    background-color: #ebebeb;
+    height: 60vh;
+    width: 60%;
+}
+.banner_right {
+    background-color: #ebebeb;
+    height: 60vh;
+    width: 40%;
+}
+}
+@media screen and (max-width: 600px) {
+    .banner_img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 38%;
+    }
+    .box > p {
+      font-size: 16px;
+      color: white;
+      letter-spacing: 1px;
+      line-height: 39px;
+    }
+    .banner_left {
+        background-color: #ebebeb;
+        height: 60vh;
+        width: 60%;
+    }
+    .banner_right {
+        background-color: #ebebeb;
+        height: 60vh;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .banner_img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 60%;
+      margin-left: -15%;
+    }
+    .box {
+      background: #6200ee;
+      padding: 16px;
+      margin-top: 26% !important;
+      margin-left: 10%;
+      margin-right: 14%;
+      box-shadow: 5px 10px 18px #888888;
+    }
+    .box > p {
+      font-size: 14px;
+      color: white;
+      line-height: 30px;
+    }
+    .banner_left {
+        background-color: #ebebeb;
+        height: 50vh;
+        width: 60%;
+    }
+    .banner_right {
+        background-color: #ebebeb;
+        height: 50vh;
+        width: 40%;
+    }
+}
