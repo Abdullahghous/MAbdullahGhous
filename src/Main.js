@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './main.css';
 import ModalImage from "react-modal-image";
 import axios from 'axios';
-import { Windmill } from 'react-activity';
-import 'react-activity/dist/react-activity.css';
+
 
 function Main() {
 
@@ -26,24 +25,22 @@ function Main() {
                 </path>
             </svg>
         <div class="flex-container">
-            {projects ?
-                projects.map(function (project){
-                    return (
-                        <div key={project._id}>
-                        <ModalImage
-              small={`https://portfolio12-be.herokuapp.com/${project.img}`}
-              large={`https://portfolio12-be.herokuapp.com/${project.img}`}
-              className="img_card"
-              />
-          <h3 className="title_card">{project.title}</h3>
-                    <p className="text_card"><strong>Hosted URL: </strong><a href={project.url}>{project.url}</a></p>
-           <a href={project.githubLink}><button className="card_button">GitHub Link</button></a>
-                  </div>
-                    )
-                })
-            :
-            <Windmill color="#ebebeb" size={42} speed={1} animating={true} />
-            }
+        {
+            projects.map(function (project){
+                return (
+                    <div key={project._id}>
+                    <ModalImage
+                    small={`https://portfolio12-be.herokuapp.com/${project.img}`}
+                    large={`https://portfolio12-be.herokuapp.com/${project.img}`}
+                    className="img_card"
+                    />
+                <h3 className="title_card">{project.title}</h3>
+                <p className="text_card"><strong>Hosted URL: </strong><a href={project.url}>{project.url}</a></p>
+                <a href={project.githubLink}><button className="card_button">GitHub Link</button></a>
+            </div>
+                )
+            })
+        }
       </div>
       </>
     )
