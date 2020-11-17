@@ -1,6 +1,5 @@
 import React from 'react';
 import './footer.css';
-import { Link } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaGithubSquare, FaGooglePlay } from 'react-icons/fa';
 
 function Footer() {

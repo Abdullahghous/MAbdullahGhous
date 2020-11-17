@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './main.css';
-import Pic from './Assets/Images/new.png';
 import ModalImage from "react-modal-image";
 import axios from 'axios';
+import { Windmill } from 'react-activity';
+import 'react-activity/dist/react-activity.css';
 
 function Main() {
 
@@ -25,7 +26,7 @@ function Main() {
                 </path>
             </svg>
         <div class="flex-container">
-            {
+            {projects ?
                 projects.map(function (project){
                     return (
                         <div key={project._id}>
@@ -40,30 +41,9 @@ function Main() {
                   </div>
                     )
                 })
+            :
+            <Windmill color="#ebebeb" size={42} speed={1} animating={true} />
             }
-            {/* {
-                projects.map(project => {
-                    <div>
-                          <ModalImage
-                small={`https://portfolio12-be.herokuapp.com/${project.img}`}
-                large={`https://portfolio12-be.herokuapp.com/${project.img}`}
-                className="img_card"
-                />
-            <h3 className="title_card">{project.title}</h3>
-            <p className="text_card"><strong>Hosted URl :</strong> https://netflix-clone-46645.web.app/</p>
-            <button className="card_button">GitHub Link</button>
-                    </div>
-                })
-            } */}
-            {/* <img onClick={handleShow} src={Pic} alt="img" className="img_card"/> */}
-                {/* <ModalImage
-                small={Pic}
-                large={Pic}
-                className="img_card"
-                />
-            <h3 className="title_card">Netflix-Clone ReactJs</h3>
-            <p className="text_card"><strong>Hosted URl :</strong> https://netflix-clone-46645.web.app/</p>
-            <button className="card_button">GitHub Link</button> */}
       </div>
       </>
     )
