@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function Main() {
 
-    const fetchURL = 'https://portfolio12-be.herokuapp.com/v1/show-project';
+    const fetchURL = 'https://portfolio-bk.herokuapp.com/projects';
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
@@ -17,6 +17,8 @@ function Main() {
         }
         fetchData();
     }, [fetchURL])
+
+    console.log('>>>>>', projects);
 
     return (
         <>
@@ -30,8 +32,8 @@ function Main() {
                 return (
                     <div key={project._id}>
                     <ModalImage
-                    small={`https://portfolio12-be.herokuapp.com/${project.img}`}
-                    large={`https://portfolio12-be.herokuapp.com/${project.img}`}
+                    small={`https://portfolio-bk.herokuapp.com/${project.img}`}
+                    large={`https://portfolio-bk.herokuapp.com/${project.img}`}
                     className="img_card"
                     />
                 <h3 className="title_card">{project.title}</h3>
