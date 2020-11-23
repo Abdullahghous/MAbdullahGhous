@@ -2,17 +2,20 @@ import React, { useState, useEffect } from 'react'
 import './main.css';
 import ModalImage from "react-modal-image";
 import axios from 'axios';
+import * as ReactBootStrap from 'react-bootstrap';
 
 
 function Main() {
 
     const fetchURL = 'https://portfolio-bk.herokuapp.com/projects';
     const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(fetchURL);
-            setProjects(request.data.data)
+            setLoading(true);
+            setProjects(request.data.data);
             return request;
         }
         fetchData();
@@ -28,6 +31,7 @@ function Main() {
             </svg>
         <div class="flex-container">
         {
+            loading ?
             projects.map(function (project){
                 return (
                     <div key={project._id}>
@@ -42,6 +46,8 @@ function Main() {
             </div>
                 )
             })
+            :
+            <ReactBootStrap.Spinner animation='grow' style={{ width: '80px' }}/>
         }
       </div>
       </>
