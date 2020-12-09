@@ -1,18 +1,23 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import BigBanner from './BigBanner';
-import Main from './Main';
-import Footer from './Footer';
+import Home from './Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import UploadProject from './UploadProject';
 
 function App() {
   return (
-    <>
-      <Header/>
-      <BigBanner/>
-      <Main/>
-      <Footer/>
-    </>
+    <Router>
+      <div>
+        <Switch>
+          <Route path='/add-project'>
+            <UploadProject />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
