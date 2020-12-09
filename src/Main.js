@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './main.css';
 import ModalImage from "react-modal-image";
-import axios from 'axios';
+// import axios from 'axios';
 import * as ReactBootStrap from 'react-bootstrap';
-import Banner from './Assets/Images/bannerImg.png'
+// import Banner from './Assets/Images/bannerImg.png'
 import firebase from './Firebase';
 
 

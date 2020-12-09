@@ -8,13 +8,13 @@ function BigBanner() {
             <div className="banner_left">
                 <div className="box">
                     <p>
-                        A Full Stack Developer who specialize in (Html, CSS, NodeJS, ReactJS and React Native). 
+                        A Full Stack Developer who specialize in (Html, CSS, NodeJS, ReactJS and React Native).
                         Experience building complete web application and mobile application with backend API system.
                     </p>
                 </div>
             </div>
             <div className="banner_right">
-                <img src={Banner} alt="Image" className="banner_img"/>
+                <img src={Banner} alt="banner" className="banner_img" />
             </div>
             <div className="circle0"></div>
         </div>
